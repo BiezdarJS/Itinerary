@@ -1,0 +1,52 @@
+@import 'colors';
+
+:host {
+  ::ng-deep {
+    .action-btn {
+      background-color: #ffffa6;
+      color: $white;
+      text-shadow: 0 1px 1px rgba(146, 146, 146, 0.5);
+    }
+  }
+}
+
+.hero {
+  &-heading {
+    font-size: 8.5rem;
+    text-align: center;
+    display: inline-block;
+    padding: 110px 0 30px;
+    text-transform: uppercase;
+    font-family: "ChunkFive-Roman", sans-serif;
+    color: white;
+    &--white {
+      color: $white;
+    }
+    &--turquoise {
+      color: $turquoise;
+    }
+    &--pr {
+      padding-right: 25px;
+    }
+  }
+  &-description {
+    color: $white;
+    font-family: "Lato", sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.4rem;
+    text-align: center;
+  }
+}
+
+
+.bottom-decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
+  background-color: rgba(255,255,255,.8);
+  width: min(90%, 1970px)
+}

@@ -1,0 +1,19 @@
+.page-heading {
+  position: absolute;
+  left: 0.2vw;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  &--sm {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    letter-spacing: .05rem;
+    color: white;
+  }
+  &--lg {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: .05rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: white;
+  }
+}
