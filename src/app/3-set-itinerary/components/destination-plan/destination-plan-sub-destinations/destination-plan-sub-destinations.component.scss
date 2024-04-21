@@ -1,0 +1,26 @@
+@import 'colors';
+
+:host {
+  &::ng-deep {
+    iy-destination-plan-sub-destination-item:not(:last-of-type) {
+      .c-sub-destination-item {
+        border-bottom: 1px solid $dark-sand;
+      }
+    }
+  }
+}
+
+.c-sub-destinations {
+  border-bottom-left-radius: 5px;
+}
+
+.l-sub-destinations {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.sub-destinations-list {
+  background-color: $light-sand;
+  border-bottom-left-radius: 5px;
+  padding: 0 20px;
+}

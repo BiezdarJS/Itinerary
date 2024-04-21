@@ -1,0 +1,27 @@
+@import 'colors';
+
+.destination-list {
+  &__header {
+    margin-bottom: 20px;
+  }
+  &__heading {
+    color: $turquoise-light;
+    position: relative;
+    font-size: 1.7rem;
+    font-weight: 900;
+    letter-spacing: .5px;
+    margin-top: 20px;
+    &::after {
+      content: '';
+      border-bottom: 2px solid $turquoise-light;
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 6;
+      width: 70px;
+      height: inherit;
+      padding-top: 15px;
+    }
+  }
+}

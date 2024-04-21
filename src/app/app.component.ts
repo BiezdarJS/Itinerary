@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './1-header/header/header.component';
+import { SetItineraryComponent } from './3-set-itinerary/set-itinerary.component';
 
 @Component({
   selector: 'iy-root',
@@ -9,7 +10,8 @@ import { HeaderComponent } from './1-header/header/header.component';
   imports: [
     CommonModule,
     RouterOutlet,
-    HeaderComponent
+    HeaderComponent,
+    SetItineraryComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

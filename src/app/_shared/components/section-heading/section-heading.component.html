@@ -1,1 +1,16 @@
-<p>section-heading works!</p>
+<section class="iy-heading" [ngClass]="{'text-center': isCenter }">
+  <h2 class="iy-heading-title">
+    <span class="iy-heading-title__substr1">
+      {{ headingPart1 }}
+    </span>
+    @if (headingPart2) {
+      <span class="iy-heading-title__substr2">
+        {{ headingPart2 }}
+      </span>
+    }
+  </h2>
+    @if (description) {
+      <p class="iy-heading__text pt-30" [innerHTML]="description">
+      </p>
+    }
+</section>

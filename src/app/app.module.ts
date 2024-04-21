@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SectionHeadingComponent } from './_shared/components/section-heading/section-heading.component';
+import { HeadingModule } from './_shared/modules/heading/heading.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    SectionHeadingComponent
+    HeadingModule
   ]
 })
 export class AppModuleModule { }

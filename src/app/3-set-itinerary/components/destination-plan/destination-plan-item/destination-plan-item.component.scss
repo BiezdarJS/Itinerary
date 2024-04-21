@@ -1,0 +1,44 @@
+@import 'colors';
+
+.c-destination-item {
+  list-style: none;
+}
+
+.l-destination-item {
+  margin-bottom: 10px;
+}
+
+.c-destination {
+  background-color: $white;
+  border: 1px solid #d5d57d;
+  border-radius: 5px;
+  min-height: 70px;
+  &__name {
+    color: $dark-grey;
+    font-size: 2.2rem;
+    font-weight: 100;
+  }
+  &__img {
+    align-self: center;
+    &-wrap {
+      display: grid;
+      justify-content: center;
+      height: 45px;
+      width: 60px;
+    }
+  }
+}
+
+.l-destination {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  padding: 10px;
+
+  &__name {
+    display: inline-block;
+    padding-left: 20px;
+  }
+}
+
+

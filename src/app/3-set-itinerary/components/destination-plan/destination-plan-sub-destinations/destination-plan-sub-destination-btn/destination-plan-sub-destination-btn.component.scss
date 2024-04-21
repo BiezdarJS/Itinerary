@@ -1,0 +1,30 @@
+.c-sub-destination-btn {
+  background-color: rgb(245, 233, 158);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #d8cb7d;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 5px 15px;
+}
+
+.l-sub-destination-btn {
+  display: grid;
+  justify-content: end;
+}
+
+.add-new {
+  background-color: #d8cb7d;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  margin-left: 5px;
+}
+
+.icon-plus {
+  background-color: #fdfda6;
+  width: 9px;
+  height: 9px;
+}
