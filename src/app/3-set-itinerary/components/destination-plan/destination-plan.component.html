@@ -5,7 +5,9 @@
     </h2>
   </header>
   <main class="destination-plan__main">
-    <iy-destination-day/>
+    @for (day of destinationPlan; track day;) {
+      <iy-destination-plan-day [destinationPlanDay]="day"/>
+    }
   </main>
 </section>
 

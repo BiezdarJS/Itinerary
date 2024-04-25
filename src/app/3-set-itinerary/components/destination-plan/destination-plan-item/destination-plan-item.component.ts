@@ -11,7 +11,7 @@ import { DestinationPlanSubDestinationsComponent } from '../destination-plan-sub
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DestinationPlanItemComponent {
-  @Input() destination: DestinationEnum | null = null;
+  @Input() destination?: DestinationEnum;
 
   protected readonly DestinationEnum = DestinationEnum;
 }

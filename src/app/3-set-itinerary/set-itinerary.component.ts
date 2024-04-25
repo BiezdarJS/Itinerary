@@ -3,6 +3,7 @@ import { SectionHeadingComponent } from '../_shared/components/section-heading/s
 import { DestinationPlanComponent } from './components/destination-plan/destination-plan.component';
 import { HeadingModule } from '../_shared/modules/heading/heading.module';
 import { DestinationListComponent } from './components/destination-list/destination-list.component';
+import { DESTINATION_PLAN_MOCK } from './const/destination-plan.mock';
 
 @Component({
   selector: 'iy-set-itinerary',
@@ -18,5 +19,6 @@ import { DestinationListComponent } from './components/destination-list/destinat
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SetItineraryComponent {
+  protected readonly destinationPlan = DESTINATION_PLAN_MOCK;
 
 }

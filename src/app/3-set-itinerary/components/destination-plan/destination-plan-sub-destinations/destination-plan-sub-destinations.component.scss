@@ -4,7 +4,7 @@
   &::ng-deep {
     iy-destination-plan-sub-destination-item:not(:last-of-type) {
       .c-sub-destination-item {
-        border-bottom: 1px solid $dark-sand;
+        border-bottom: 1px solid $sand-dark;
       }
     }
   }
@@ -20,7 +20,7 @@
 }
 
 .sub-destinations-list {
-  background-color: $light-sand;
+  background-color: $sand-light;
   border-bottom-left-radius: 5px;
   padding: 0 20px;
 }

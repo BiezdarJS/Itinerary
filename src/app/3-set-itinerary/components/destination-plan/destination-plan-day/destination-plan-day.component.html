@@ -1,12 +1,22 @@
 <div class="day">
   <div class="day__heading">
     <h4 class="day__number">
-      Day 1
+      Day {{ destinationPlanDay?.DayNumber }}
     </h4>
     <time class="day__date" datetime="2015-05-29">
-      05/29/2015
+      {{ destinationPlanDay?.Date }}
     </time>
   </div>
 </div>
-<iy-destination-plan-item [destination]="DestinationEnum.MOUNTAIN_BROMO" />
-<iy-destination-plan-item [destination]="DestinationEnum.CITY_BATU" />
+@for (destination of destinationPlanDay?.Destinations;track destination;) {
+  @switch (destination.Name) {
+    @case ("Mt. Bromo") {
+      <iy-destination-plan-item [destination]="DestinationEnum.MOUNTAIN_BROMO" />
+    }
+    @case ("Batu City") {
+      <iy-destination-plan-item [destination]="DestinationEnum.CITY_BATU" />
+    }
+  }
+
+}
+

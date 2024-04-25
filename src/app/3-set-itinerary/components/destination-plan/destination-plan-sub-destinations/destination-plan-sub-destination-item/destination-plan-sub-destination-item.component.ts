@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'iy-destination-plan-sub-destination-item',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './destination-plan-sub-destination-item.component.scss'
 })
 export class DestinationPlanSubDestinationItemComponent {
-
+  @Input() text: string | null = '';
 }
