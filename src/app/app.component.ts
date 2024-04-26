@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './1-header/header/header.component';
 import { SetItineraryComponent } from './3-set-itinerary/set-itinerary.component';
 
 @Component({
@@ -10,7 +9,6 @@ import { SetItineraryComponent } from './3-set-itinerary/set-itinerary.component
   imports: [
     CommonModule,
     RouterOutlet,
-    HeaderComponent,
     SetItineraryComponent
   ],
   templateUrl: './app.component.html',

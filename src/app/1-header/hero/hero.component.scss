@@ -2,6 +2,9 @@
 
 :host {
   ::ng-deep {
+    iy-action-btn {
+      display: block;
+    }
     .action-btn {
       background-color: #ffffa6;
       color: $white;
