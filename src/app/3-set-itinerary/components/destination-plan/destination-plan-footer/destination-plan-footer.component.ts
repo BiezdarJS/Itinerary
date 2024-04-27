@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ActionBtnComponent } from '../../../../_shared/components/action-btn/action-btn.component';
 
 @Component({
@@ -6,7 +6,8 @@ import { ActionBtnComponent } from '../../../../_shared/components/action-btn/ac
   standalone: true,
   imports: [ActionBtnComponent],
   templateUrl: './destination-plan-footer.component.html',
-  styleUrl: './destination-plan-footer.component.scss'
+  styleUrl: './destination-plan-footer.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DestinationPlanFooterComponent {
 

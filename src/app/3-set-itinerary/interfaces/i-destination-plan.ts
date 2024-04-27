@@ -1,10 +1,10 @@
 export interface IDestinationPlanDay {
   DayNumber: string;
   Date: string;
-  Destinations: Destination[];
+  Destinations: IDestination[];
 }
 
-export interface Destination {
+export interface IDestination {
   Name: string;
   SubDestinations: ISubDestination[]
 }

@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { DestinationPlanDayComponent } from './destination-plan-day/destination-plan-day.component';
 import { IDestinationPlanDay } from '../../interfaces/i-destination-plan';
-import { ActionBtnComponent } from '../../../_shared/components/action-btn/action-btn.component';
 import { DestinationPlanHeaderComponent } from './destination-plan-header/destination-plan-header.component';
 import { DestinationPlanFooterComponent } from './destination-plan-footer/destination-plan-footer.component';
 
@@ -12,7 +11,7 @@ import { DestinationPlanFooterComponent } from './destination-plan-footer/destin
   imports: [
     DestinationPlanHeaderComponent,
     DestinationPlanFooterComponent,
-    DestinationPlanDayComponent
+    DestinationPlanDayComponent,
   ],
   templateUrl: './destination-plan.component.html',
   styleUrl: './destination-plan.component.scss',
@@ -20,5 +19,7 @@ import { DestinationPlanFooterComponent } from './destination-plan-footer/destin
 })
 export class DestinationPlanComponent {
   @Input() destinationPlan?: IDestinationPlanDay[];
+
+
 
 }

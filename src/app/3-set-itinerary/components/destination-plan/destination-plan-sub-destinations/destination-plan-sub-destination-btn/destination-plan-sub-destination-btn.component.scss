@@ -1,8 +1,10 @@
+@import 'colors';
+
 .c-sub-destination-btn {
-  background-color: rgb(245, 233, 158);
+  background-color: $sand-light;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  color: #d8cb7d;
+  color: $sand-dark;
   font-size: 1.4rem;
   font-weight: 700;
   padding: 7px 15px;
@@ -14,7 +16,7 @@
 }
 
 .add-new {
-  background-color: #d8cb7d;
+  background-color: $sand-dark;
   border-radius: 50%;
   display: inline-grid;
   place-items: center;
@@ -24,7 +26,7 @@
 }
 
 .icon-plus {
-  background-color: #fdfda6;
+  background-color: $sand-light;
   width: 9px;
   height: 9px;
 }

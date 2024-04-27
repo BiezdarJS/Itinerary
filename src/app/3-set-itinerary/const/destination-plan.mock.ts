@@ -9,10 +9,10 @@ export const DESTINATION_PLAN_MOCK: IDestinationPlanDay[] = [
         Name: "Mt. Bromo",
         SubDestinations: [
           {
-            Name: "Robienie zdjęć"
+            Name: "Wzięcie udziału w Runmagedon"
           },
           {
-            Name: "Pójście wieczorem na event z Fb"
+            Name: "Komora hiperbaryczna"
           }
         ]
       },
@@ -24,6 +24,9 @@ export const DESTINATION_PLAN_MOCK: IDestinationPlanDay[] = [
           },
           {
             Name: "Pójście wieczorem na event z Fb"
+          },
+          {
+            Name: "Odwiedzenie cafee'"
           }
         ]
       }

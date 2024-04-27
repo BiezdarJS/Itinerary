@@ -1,0 +1,19 @@
+@import 'colors';
+
+.c-drag-place {
+  padding: 8px 0;
+  background: $sand-medium;
+  border: $sand-dark dashed;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: $sand-dark;
+
+}
+
+.l-drag-place {
+  display: grid;
+  place-items: center;
+  min-height: 80px;
+  margin-top: 30px;
+}

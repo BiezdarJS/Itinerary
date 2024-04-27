@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { DestinationEnum } from '../../../enums/destinations.enum';
 import { DestinationPlanSubDestinationsComponent } from '../destination-plan-sub-destinations/destination-plan-sub-destinations.component';
+import { IDestination } from '../../../interfaces/i-destination-plan';
 
 @Component({
   selector: 'iy-destination-plan-item',
@@ -11,7 +12,7 @@ import { DestinationPlanSubDestinationsComponent } from '../destination-plan-sub
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DestinationPlanItemComponent {
-  @Input() destination?: DestinationEnum;
+  @Input() destination?: IDestination;
 
   protected readonly DestinationEnum = DestinationEnum;
 }

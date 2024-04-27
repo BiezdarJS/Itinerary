@@ -1,9 +1,15 @@
-<div class="c-sub-destinations l-sub-destinations">
-  <div class="sub-destinations-list">
-    <iy-destination-plan-sub-destination-item text="Robienie zjęć" />
-    <iy-destination-plan-sub-destination-item text="Pójście wieczorem na event z Fb"/>
+
+  <div class="c-sub-destinations l-sub-destinations">
+    @if (subDestinationsExist()) {
+      <div class="sub-destinations-list">
+        @for (item of subDestinations;track item;) {
+          <iy-destination-plan-sub-destination-item [text]="item.Name" />
+        }
+      </div>
+    }
+    <iy-destination-plan-sub-destination-btn />
   </div>
-  <iy-destination-plan-sub-destination-btn />
-</div>
+
+
 
 

@@ -8,15 +8,10 @@
     </time>
   </div>
 </div>
-@for (destination of destinationPlanDay?.Destinations;track destination;) {
-  @switch (destination.Name) {
-    @case ("Mt. Bromo") {
-      <iy-destination-plan-item [destination]="DestinationEnum.MOUNTAIN_BROMO" />
-    }
-    @case ("Batu City") {
-      <iy-destination-plan-item [destination]="DestinationEnum.CITY_BATU" />
-    }
-  }
-
+@for (destinationItem of destinationPlanDay?.Destinations;track destinationItem;) {
+  <iy-destination-plan-item [destination]="destinationItem" />
+}
+@if (!hasMoreThanOneDestination()) {
+  <iy-drag-destination-here />
 }
 

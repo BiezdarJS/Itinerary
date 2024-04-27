@@ -1,5 +1,5 @@
-@switch(destination) {
-  @case (DestinationEnum.MOUNTAIN_BROMO) {
+@switch(destination?.Name) {
+  @case ("Mt. Bromo") {
     <li class="c-destination-item l-destination-item">
       <div class="c-destination l-destination">
         <div class="c-destination__basic-info l-destination__basic-info">
@@ -10,10 +10,10 @@
         </div>
         <input class="c-destination__time-frame l-destination__time-frame" type="text" placeholder="03:30 - 09:00" />
       </div>
-      <iy-destination-plan-sub-destinations />
+      <iy-destination-plan-sub-destinations [subDestinations]="destination?.SubDestinations" />
     </li>
   }
-  @case (DestinationEnum.CITY_BATU) {
+  @case ("Batu City") {
     <li class="c-destination-item l-destination-item">
       <div class="c-destination l-destination">
         <div class="c-destination__basic-info l-destination__basic-info">
@@ -24,7 +24,7 @@
         </div>
         <input class="c-destination__time-frame l-destination__time-frame" type="text" placeholder="03:30 - 09:00" />
       </div>
-      <iy-destination-plan-sub-destinations />
+      <iy-destination-plan-sub-destinations [subDestinations]="destination?.SubDestinations" />
     </li>
   }
 }
