@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { DestinationEnum } from '../../../enums/destinations.enum';
+import { IDestinationListItem } from '../../../interfaces/i-destination-list';
 
 @Component({
   selector: 'iy-destination-list-item',
@@ -9,7 +9,6 @@ import { DestinationEnum } from '../../../enums/destinations.enum';
   styleUrl: './destination-list-item.component.scss'
 })
 export class DestinationListItemComponent {
-  @Input() destination: DestinationEnum | null = null;
+  @Input() destination?: IDestinationListItem;
 
-  protected readonly DestinationEnum = DestinationEnum;
 }

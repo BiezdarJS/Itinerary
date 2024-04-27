@@ -2,21 +2,27 @@
   @case (DestinationEnum.MOUNTAIN_BROMO) {
     <li class="c-destination-item l-destination-item">
       <div class="c-destination l-destination">
-        <div class="c-destination__img-wrap">
-          <img class="c-destination__img" src="/assets/images/mountain-icon.png" width="60" height="30" alt="Bromo Icon">
+        <div class="c-destination__basic-info l-destination__basic-info">
+          <div class="c-destination__img-wrap">
+            <img class="c-destination__img" src="/assets/images/mountain-icon.png" width="60" height="30" alt="Bromo Icon">
+          </div>
+          <p class="c-destination__name l-destination__name">Mt. Bromo</p>
         </div>
-        <p class="c-destination__name l-destination__name">Mt. Bromo</p>
+        <input class="c-destination__time-frame l-destination__time-frame" type="text" placeholder="03:30 - 09:00" />
       </div>
-        <iy-destination-plan-sub-destinations />
+      <iy-destination-plan-sub-destinations />
     </li>
   }
   @case (DestinationEnum.CITY_BATU) {
     <li class="c-destination-item l-destination-item">
       <div class="c-destination l-destination">
-        <div class="c-destination__img-wrap">
-          <img class="c-destination__img" src="/assets/images/batu-icon.png" width="40" height="42" alt="Batu Icon">
+        <div class="c-destination__basic-info l-destination__basic-info">
+          <div class="c-destination__img-wrap">
+            <img class="c-destination__img" src="/assets/images/batu-icon.png" width="40" height="42" alt="Batu Icon">
+          </div>
+          <p class="c-destination__name l-destination__name">Batu City</p>
         </div>
-        <p class="c-destination__name l-destination__name">Batu City</p>
+        <input class="c-destination__time-frame l-destination__time-frame" type="text" placeholder="03:30 - 09:00" />
       </div>
       <iy-destination-plan-sub-destinations />
     </li>

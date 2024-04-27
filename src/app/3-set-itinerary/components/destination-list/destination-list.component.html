@@ -5,8 +5,12 @@
     </h2>
   </header>
   <main class="destination-list__main">
-    <iy-destination-list-item [destination]="DestinationEnum.MOUNTAIN_BROMO" />
-    <iy-destination-list-item [destination]="DestinationEnum.CITY_BATU" />
-    <iy-destination-list-item [destination]="DestinationEnum.MOUNTAIN_SEMERU" />
+    <div class="destination-list__actions">
+      <iy-sort-destination />
+      <iy-destination-list-search />
+    </div>
+    @for (destination of destinationList; track destination;) {
+      <iy-destination-list-item [destination]="destination" />
+    }
   </main>
 </section>

@@ -2,7 +2,35 @@
   display: inline-block;
   width: 10px;
   height: 10px;
-  mask-image: url('~/src/assets/images/icons/plus.svg.svg');
+  mask-image: url('~/src/assets/images/icons/plus.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+
+.icon-magnifying-glass {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  mask-image: url('~/src/assets/images/icons/magnifying-glass.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.icon-book {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  mask-image: url('~/src/assets/images/icons/book.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.icon-printer {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  mask-image: url('~/src/assets/images/icons/printer.svg');
   mask-repeat: no-repeat;
   mask-position: center;
 }

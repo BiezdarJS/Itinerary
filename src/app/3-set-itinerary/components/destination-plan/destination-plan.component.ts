@@ -1,13 +1,19 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { DestinationPlanDayComponent } from './destination-plan-day/destination-plan-day.component';
-import { IDestinationPlanDay } from '../../const/i-destination-plan';
-import { JsonPipe } from '@angular/common';
+import { IDestinationPlanDay } from '../../interfaces/i-destination-plan';
+import { ActionBtnComponent } from '../../../_shared/components/action-btn/action-btn.component';
+import { DestinationPlanHeaderComponent } from './destination-plan-header/destination-plan-header.component';
+import { DestinationPlanFooterComponent } from './destination-plan-footer/destination-plan-footer.component';
 
 
 @Component({
   selector: 'iy-destination-plan',
   standalone: true,
-  imports: [DestinationPlanDayComponent, JsonPipe],
+  imports: [
+    DestinationPlanHeaderComponent,
+    DestinationPlanFooterComponent,
+    DestinationPlanDayComponent
+  ],
   templateUrl: './destination-plan.component.html',
   styleUrl: './destination-plan.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush

@@ -1,0 +1,47 @@
+@import 'colors';
+
+.destination-list-search {
+  color: $turquoise-light;
+  display: inline-block;
+  margin: 30px 40px 10px;
+
+}
+
+.search-form {
+  font-size: 1.4rem;
+  width: 30px;
+  overflow: hidden;
+  padding-left: 30px;
+  border: none;
+  position: relative;
+  -webkit-transition: border 0.5s, width 0.5s, padding-left 0.5s, border 0.5s;
+  transition: border 0.5s, width 0.5s, padding-left 0.5s, border 0.5s;
+  &:hover {
+    width: 160px;
+    padding-left: 10px;
+    border: #01a2a6 solid 1px;
+    border-radius: 10px;
+    margin-left: 0;
+  }
+  &__input {
+    padding: 0;
+    margin: 0;
+    margin-left: 15%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+  }
+}
+
+i[class*=magnifying] {
+  background-color: $black;
+  mask-size: 50% auto;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}

@@ -4,6 +4,7 @@ import { DestinationPlanComponent } from './components/destination-plan/destinat
 import { HeadingModule } from '../_shared/modules/heading/heading.module';
 import { DestinationListComponent } from './components/destination-list/destination-list.component';
 import { DESTINATION_PLAN_MOCK } from './const/destination-plan.mock';
+import { DESTINATION_LIST_MOCK } from './const/destination-list.mock';
 
 @Component({
   selector: 'iy-set-itinerary',
@@ -20,5 +21,5 @@ import { DESTINATION_PLAN_MOCK } from './const/destination-plan.mock';
 })
 export class SetItineraryComponent {
   protected readonly destinationPlan = DESTINATION_PLAN_MOCK;
-
+  protected readonly destinationList = DESTINATION_LIST_MOCK;
 }

@@ -1,4 +1,4 @@
-import { IDestinationPlanDay } from "./i-destination-plan";
+import { IDestinationPlanDay } from "../interfaces/i-destination-plan";
 
 export const DESTINATION_PLAN_MOCK: IDestinationPlanDay[] = [
   {

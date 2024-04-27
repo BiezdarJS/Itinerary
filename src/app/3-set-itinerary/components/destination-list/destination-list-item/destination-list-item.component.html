@@ -1,26 +1,53 @@
-@switch(destination) {
-  @case (DestinationEnum.MOUNTAIN_BROMO) {
+@switch(destination?.Name) {
+  @case ("Mt. Bromo") {
     <li class="c-destination-item l-destination-item">
-      <p class="c-destination-item__name l-destination-item__name">Mt. Bromo</p>
-      <div class="c-destination-item__img-wrap">
+      <div class="c-destination-item__basic-info">
+        <p class="c-destination-item__name l-destination-item__name">Mt. Bromo</p>
+        <p class="c-destination-item__estimated-time">
+          estimated time:
+          <span>
+            <span class="font-medium">5</span> hours
+          </span>
+        </p>
+      </div>
+      <a class="c-destination-item__more-info" href="#">
         <img class="c-destination-item__img" src="/assets/images/mountain-icon.png" width="60" height="30" alt="Bromo Icon">
-      </div>
+        view details
+      </a>
     </li>
   }
-  @case (DestinationEnum.CITY_BATU) {
+  @case ("Batu City") {
     <li class="c-destination-item l-destination-item">
-      <p class="c-destination-item__name l-destination-item__name">Batu City</p>
-      <div class="c-destination-item__img-wrap">
+      <div class="c-destination-item__basic-info">
+        <p class="c-destination-item__name l-destination-item__name">Batu City</p>
+        <p class="c-destination-item__estimated-time">
+          estimated time:
+          <span>
+            <span class="font-medium">5</span> hours
+          </span>
+        </p>
+      </div>
+      <a class="c-destination-item__more-info" href="#">
         <img class="c-destination-item__img" src="/assets/images/batu-icon.png" width="40" height="42" alt="Batu Icon">
-      </div>
+        view details
+      </a>
     </li>
   }
-  @case (DestinationEnum.MOUNTAIN_SEMERU) {
+  @case ("Mt. Semeru") {
     <li class="c-destination-item l-destination-item">
-      <p class="c-destination-item__name l-destination-item__name">Mt. Semeru</p>
-      <div class="c-destination-item__img-wrap">
-        <img class="c-destination-item__img" src="/assets/images/mountain-icon.png" width="60" height="30" alt="Batu Icon">
+      <div class="c-destination-item__basic-info">
+        <p class="c-destination-item__name l-destination-item__name">Mt. Semeru</p>
+        <p class="c-destination-item__estimated-time">
+          estimated time:
+          <span>
+            <span class="font-medium">5</span> hours
+          </span>
+        </p>
       </div>
+      <a class="c-destination-item__more-info" href="#">
+        <img class="c-destination-item__img" src="/assets/images/mountain-icon.png" width="60" height="30" alt="Batu Icon">
+        view details
+      </a>
     </li>
   }
 }

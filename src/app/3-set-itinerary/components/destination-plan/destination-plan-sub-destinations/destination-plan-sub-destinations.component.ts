@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { DestinationPlanSubDestinationItemComponent } from './destination-plan-sub-destination-item/destination-plan-sub-destination-item.component';
 import { DestinationPlanSubDestinationBtnComponent } from './destination-plan-sub-destination-btn/destination-plan-sub-destination-btn.component';
 
@@ -10,7 +10,8 @@ import { DestinationPlanSubDestinationBtnComponent } from './destination-plan-su
     DestinationPlanSubDestinationBtnComponent
   ],
   templateUrl: './destination-plan-sub-destinations.component.html',
-  styleUrl: './destination-plan-sub-destinations.component.scss'
+  styleUrl: './destination-plan-sub-destinations.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DestinationPlanSubDestinationsComponent {
 

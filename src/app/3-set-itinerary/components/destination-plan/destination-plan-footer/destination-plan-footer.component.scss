@@ -1,0 +1,39 @@
+@import 'colors';
+
+:host {
+  ::ng-deep {
+    .action-btn {
+      align-items: center!important;
+      gap: 10px!important;
+      color: $white!important;
+      font-size: 1.6rem!important;
+      padding: 20px 30px!important;
+      text-transform: uppercase!important;
+      width: auto!important;
+    }
+    .save-as-pdf {
+      .action-btn {
+        background-color: #bbe87b;
+      }
+    }
+    .print {
+      .action-btn {
+        background-color: $turquoise-light;
+      }
+    }
+    &[class*=icon] {
+      background-color: $white;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.destination-plan {
+  &__footer {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    margin-top: 25px;
+  }
+}

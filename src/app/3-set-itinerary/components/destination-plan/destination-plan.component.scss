@@ -6,27 +6,9 @@
 }
 
 .destination-plan {
-  &__header {
-    background-image: url(~src/assets/images/itinerary-title.jpg);
-    background-repeat: no-repeat;
-    background-size: 110.56% 140%;
-    background-position: -40px bottom;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding: 25px 0;
-    text-align: center;
-  }
-  &__label {
-    font-weight: 900;
-    text-align: center;
-    color: #fff;
-    letter-spacing: .5px;
-    font-size: 1.65rem;
-  }
   &__main {
     background-color: $yellow;
     padding: 25px 30px;
   }
 }
-
 

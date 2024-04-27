@@ -1,13 +1,10 @@
 <section class="destination-plan">
-  <header class="destination-plan__header">
-    <h2>
-      <span class="destination-plan__label">Your Itinerary Title Here</span>
-    </h2>
-  </header>
+  <iy-destination-plan-header />
   <main class="destination-plan__main">
     @for (day of destinationPlan; track day;) {
       <iy-destination-plan-day [destinationPlanDay]="day"/>
     }
   </main>
+  <iy-destination-plan-footer />
 </section>
 

@@ -2,23 +2,37 @@
 
 .c-destination-item {
   background-color: $white;
-  border: 1px solid $light-grey;
+  border: 1px solid $grey-light;
   border-radius: 5px;
-
-  min-height: 50px;
+  color: $grey-dark;
+  min-height: 85px;
+  &__basic-info {
+    display: grid;
+    align-items: center;
+  }
   &__name {
-    color: $dark-grey;
     font-size: 2.2rem;
     font-weight: 100;
   }
+  &__estimated-time {
+    color: #b9b9b9;
+    font-size: 1.4rem;
+    font-weight: 100;
+    span {
+      color: $turquoise-light;
+    }
+  }
+  &__more-info {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    color: $turquoise-light;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
   &__img {
     align-self: center;
-    &-wrap {
-      display: grid;
-      justify-content: center;
-      height: 45px;
-      width: 60px;
-    }
   }
 }
 
@@ -26,10 +40,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 20px;
   margin-bottom: 10px;
   &__name {
     display: inline-block;
-    padding-left: 20px;
   }
 }
