@@ -1,14 +1,13 @@
 @import 'colors';
 
 .c-drag-place {
-  padding: 8px 0;
-  background: $sand-medium;
-  border: $sand-dark dashed;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23d8cb7d' stroke-width='5' stroke-dasharray='22' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  background-color: $sand-medium;
   border-radius: 5px;
-  font-size: 1.5rem;
-  text-align: center;
   color: $sand-dark;
-
+  font-size: 1.5rem;
+  padding: 8px 0;
+  text-align: center;
 }
 
 .l-drag-place {
