@@ -6,6 +6,7 @@ export const DESTINATION_PLAN_MOCK: IDestinationPlanDay[] = [
     Date: "05/29/2015",
     Destinations: [
       {
+        ID: 1,
         Name: "Mt. Bromo",
         SubDestinations: [
           {
@@ -17,6 +18,7 @@ export const DESTINATION_PLAN_MOCK: IDestinationPlanDay[] = [
         ]
       },
       {
+        ID: 2,
         Name: "Batu City",
         SubDestinations: [
           {

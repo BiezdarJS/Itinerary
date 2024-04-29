@@ -10,7 +10,7 @@
         </div>
         <input class="c-destination__time-frame l-destination__time-frame" type="text" placeholder="03:30 - 09:00" />
       </div>
-      <iy-destination-plan-sub-destinations [subDestinations]="destination?.SubDestinations" />
+      <iy-destination-plan-sub-destinations [destinationID]="destination?.ID" [subDestinations]="destination?.SubDestinations" />
     </li>
   }
   @case ("Batu City") {
@@ -24,7 +24,7 @@
         </div>
         <input class="c-destination__time-frame l-destination__time-frame" type="text" placeholder="03:30 - 09:00" />
       </div>
-      <iy-destination-plan-sub-destinations [subDestinations]="destination?.SubDestinations" />
+      <iy-destination-plan-sub-destinations [destinationID]="destination?.ID" [subDestinations]="destination?.SubDestinations" />
     </li>
   }
 }

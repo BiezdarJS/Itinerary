@@ -4,10 +4,9 @@ import { HeadingModule } from './_shared/modules/heading/heading.module';
 
 
 @NgModule({
-  declarations: [],
   imports: [
-    CommonModule,
+
     HeadingModule
   ]
 })
-export class AppModuleModule { }
+export class AppModule { }

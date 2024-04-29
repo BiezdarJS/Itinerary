@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Hi </h1>
+<div mat-dialog-content>
+  <p>Write down your Sub Destination</p>
+  <mat-form-field class="pt-10 w-full">
+    <textarea matInput placeholder="My subdestination..." [(ngModel)]="subDestination"></textarea>
+  </mat-form-field>
+</div>
+<div class="flex justify-center p-8">
+  <button
+    mat-button
+    cdkFocusInitial
+    (click)="closeDialog()">
+      Ok
+    </button>
+</div>
