@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, Signal, computed } from '@angular/core';
 import { DestinationPlanSubDestinationItemComponent } from './destination-plan-sub-destination-item/destination-plan-sub-destination-item.component';
 import { DestinationPlanSubDestinationBtnComponent } from './destination-plan-sub-destination-btn/destination-plan-sub-destination-btn.component';
-import { ISubDestination } from '../../../interfaces/i-destination-plan';
+import { ISubDestination } from '../../../../interfaces/i-destination-plan';
 import { DestinationPlanSubDestinationModalComponent } from './destination-plan-sub-destination-modal/destination-plan-sub-destination-modal.component';
 
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';

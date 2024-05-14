@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { DestinationEnum } from '../../../enums/destinations.enum';
+import { DestinationEnum } from '../../../../enums/destinations.enum';
 import { DestinationPlanSubDestinationsComponent } from '../destination-plan-sub-destinations/destination-plan-sub-destinations.component';
-import { IDestination } from '../../../interfaces/i-destination-plan';
+import { IDestination } from '../../../../interfaces/i-destination-plan';
 
 @Component({
   selector: 'iy-destination-plan-item',
