@@ -1,4 +1,4 @@
-<div class="day">
+<section class="day">
   <div class="day__heading">
     <h4 class="day__number">
       Day {{ destinationPlanDay?.DayNumber }}
@@ -7,7 +7,7 @@
       {{ destinationPlanDay?.Date }}
     </time>
   </div>
-</div>
+</section>
 @for (destinationItem of destinationPlanDay?.Destinations;track destinationItem;) {
   <iy-destination-plan-item [destination]="destinationItem" />
 }
