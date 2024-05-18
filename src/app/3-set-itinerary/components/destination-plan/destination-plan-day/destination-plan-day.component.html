@@ -8,10 +8,18 @@
     </time>
   </div>
 </section>
-@for (destinationItem of destinationPlanDay?.Destinations;track destinationItem;) {
-  <iy-destination-plan-item [destination]="destinationItem" />
-}
-@if (!hasMoreThanOneDestination()) {
+<div
+  cdkDropList
+  [cdkDropListData]="destinationPlanDay?.Destinations"
+  class="example-list"
+  (cdkDropListDropped)="drop($event)">
+  @for (destinationItem of destinationPlanDay?.Destinations;track destinationItem;) {
+    <iy-destination-plan-item (test123)="refreshItem()" class="example-box" cdkDrag [destination]="destinationItem" />
+  }
+</div>
+
+
+@if (doesNotHaveMoreThanOneDestination()) {
   <iy-drag-destination-here />
 }
 

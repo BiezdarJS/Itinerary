@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, Signal, computed } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, Signal, WritableSignal, computed, signal } from '@angular/core';
 import { DestinationPlanSubDestinationItemComponent } from './destination-plan-sub-destination-item/destination-plan-sub-destination-item.component';
 import { DestinationPlanSubDestinationBtnComponent } from './destination-plan-sub-destination-btn/destination-plan-sub-destination-btn.component';
-import { ISubDestination } from '../../../../interfaces/i-destination-plan';
+import { ISubDestination } from '../../../../interfaces/i-destinations';
 import { DestinationPlanSubDestinationModalComponent } from './destination-plan-sub-destination-modal/destination-plan-sub-destination-modal.component';
 
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
@@ -23,20 +23,18 @@ export class DestinationPlanSubDestinationsComponent {
   @Input() destinationID?: number;
   @Input() subDestinations?: ISubDestination[];
 
-
-
-  public subDestinationsExist: Signal<boolean | undefined> = computed(() => {
-    if (this.subDestinations) {
-      return this.subDestinations?.length > 0;
-    }
-    return;
-  });
+  private _subDestinationsCount: WritableSignal<number | undefined> = signal(this.subDestinations?.length);
+  public subDestinationsExist: Signal<boolean> = computed(() => this._subDestinationsCount()! > 0);
 
 
   constructor(
     private matDialog: MatDialog,
     private cdr: ChangeDetectorRef
   ) {}
+
+  ngOnInit() {
+    this._subDestinationsCount.set(this.subDestinations?.length);
+  }
 
   public openSubDestinationModal() {
     let dialogRef = this.matDialog.open(DestinationPlanSubDestinationModalComponent);
@@ -45,6 +43,7 @@ export class DestinationPlanSubDestinationsComponent {
       this.cdr.markForCheck();
       if (result) {
         this.subDestinations?.push(result);
+        this._subDestinationsCount.set(this.subDestinations?.length);
       }
     });
   }

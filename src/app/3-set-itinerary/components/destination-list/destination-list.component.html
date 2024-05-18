@@ -9,8 +9,15 @@
       <iy-sort-destination />
       <iy-destination-list-search />
     </div>
-    @for (destination of destinationList; track destination;) {
-      <iy-destination-list-item [destination]="destination" />
-    }
+    <div
+      cdkDropList
+      [cdkDropListData]="destinationList"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      @for (destination of destinationList;track destination;) {
+        <iy-destination-list-item class="example-box" cdkDrag [destination]="destination" />
+      }
+    </div>
   </main>
 </section>
+

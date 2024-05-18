@@ -1,4 +1,4 @@
-import { IDestinationPlanDay } from "../interfaces/i-destination-plan";
+import { IDestinationPlanDay } from "../interfaces/i-destinations";
 
 export const DESTINATION_PLAN_MOCK: IDestinationPlanDay[] = [
   {
@@ -8,6 +8,7 @@ export const DESTINATION_PLAN_MOCK: IDestinationPlanDay[] = [
       {
         ID: 1,
         Name: "Mt. Bromo",
+        EstimatedTime: "5 Hours",
         SubDestinations: [
           {
             Name: "Wzięcie udziału w Runmagedon"
@@ -19,19 +20,12 @@ export const DESTINATION_PLAN_MOCK: IDestinationPlanDay[] = [
       },
       {
         ID: 2,
-        Name: "Batu City",
+        Name: "Mt. Bromo",
+        EstimatedTime: "5 Hours",
         SubDestinations: [
-          {
-            Name: "Robienie zdjęć"
-          },
-          {
-            Name: "Pójście wieczorem na event z Fb"
-          },
-          {
-            Name: "Odwiedzenie cafee'"
-          }
+
         ]
-      }
+      },
     ]
   },
 

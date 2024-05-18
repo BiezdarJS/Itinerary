@@ -5,11 +5,13 @@ import { HeadingModule } from '../_shared/modules/heading/heading.module';
 import { DestinationListComponent } from './components/destination-list/destination-list.component';
 import { DESTINATION_PLAN_MOCK } from './const/destination-plan.mock';
 import { DESTINATION_LIST_MOCK } from './const/destination-list.mock';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'iy-set-itinerary',
   standalone: true,
   imports: [
+    DragDropModule,
     SectionHeadingComponent,
     DestinationPlanComponent,
     DestinationListComponent,

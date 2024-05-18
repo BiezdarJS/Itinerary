@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IDestinationListItem } from '../../../interfaces/i-destination-list';
+import { IDestination } from '../../../interfaces/i-destinations';
 
 @Component({
   selector: 'iy-destination-list-item',
@@ -9,6 +9,6 @@ import { IDestinationListItem } from '../../../interfaces/i-destination-list';
   styleUrl: './destination-list-item.component.scss'
 })
 export class DestinationListItemComponent {
-  @Input() destination?: IDestinationListItem;
+  @Input() destination?: IDestination;
 
 }

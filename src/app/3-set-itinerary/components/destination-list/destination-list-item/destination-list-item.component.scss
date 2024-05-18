@@ -1,5 +1,9 @@
 @import 'colors';
 
+:host {
+  display: block;
+}
+
 .c-destination-item {
   background-color: $white;
   border: 1px solid $grey-light;

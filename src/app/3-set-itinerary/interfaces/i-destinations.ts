@@ -7,6 +7,7 @@ export interface IDestinationPlanDay {
 export interface IDestination {
   ID: number;
   Name: string;
+  EstimatedTime: string;
   SubDestinations: ISubDestination[]
 }
 

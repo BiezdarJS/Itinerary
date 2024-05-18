@@ -1,10 +1,10 @@
-import { Component, Inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
 import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
-import { ISubDestination } from '../../../../../interfaces/i-destination-plan';
+import { ISubDestination } from '../../../../../interfaces/i-destinations';
 
 @Component({
   selector: 'iy-destination-plan-sub-destination-modal',
@@ -18,7 +18,8 @@ import { ISubDestination } from '../../../../../interfaces/i-destination-plan';
     ReactiveFormsModule
   ],
   templateUrl: './destination-plan-sub-destination-modal.component.html',
-  styleUrl: './destination-plan-sub-destination-modal.component.scss'
+  styleUrl: './destination-plan-sub-destination-modal.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DestinationPlanSubDestinationModalComponent {
 

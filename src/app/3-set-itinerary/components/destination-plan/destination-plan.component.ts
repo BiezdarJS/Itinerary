@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { DestinationPlanDayComponent } from './destination-plan-day/destination-plan-day.component';
-import { IDestinationPlanDay } from '../../interfaces/i-destination-plan';
+import { IDestinationPlanDay } from '../../interfaces/i-destinations';
 import { DestinationPlanHeaderComponent } from './destination-plan-header/destination-plan-header.component';
 import { DestinationPlanFooterComponent } from './destination-plan-footer/destination-plan-footer.component';
 

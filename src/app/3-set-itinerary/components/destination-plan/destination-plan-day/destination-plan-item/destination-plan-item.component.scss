@@ -1,5 +1,9 @@
 @import 'colors';
 
+:host {
+  display: block;
+}
+
 .c-destination-item {
   list-style: none;
 }
