@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ActionBtnComponent } from '../../../../_shared/components/action-btn/action-btn.component';
+import { DestinationPlanService } from '../../../services/destination-plan.service';
 
 @Component({
   selector: 'iy-destination-plan-footer',
@@ -10,5 +11,4 @@ import { ActionBtnComponent } from '../../../../_shared/components/action-btn/ac
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DestinationPlanFooterComponent {
-
 }
